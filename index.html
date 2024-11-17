@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Complex Sorting Visualizer</h1>
+    <canvas id="myCanvas"></canvas>
+
+    <hr>
+
+    <div>
+        <button onClick="init()">Init</button>
+        <button onClick="playBubbleSort()">Bubble Sort</button>
+        <button onClick="playInsertionSort()">Insertion Sort</button>
+        <button onClick="playHeapSort()">Heap Sort</button>
+        <button onClick="playMergeSort()">Merge Sort</button>
+        <button onClick="playQuickSort()">Quick Sort</button>
+        <button onClick="playSelectionSort()">Selection Sort</button>
+    </div>
+
+    <div>
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="50" step="1">
+        <span id="speedValue">50</span>
+    </div>
+
+    <div>
+        <label for="arraySizeControl">Array Size:</label>
+        <input type="range" id="arraySizeControl" min="10" max="100" value="30" step="1">
+        <span id="arraySizeValue">30</span>
+    </div>
+
+    <script src="math.js"></script>
+    <script src="column.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
